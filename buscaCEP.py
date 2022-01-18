@@ -25,7 +25,8 @@ def buscarCEP(CEP, show=False):
     except: 
         return False
 
-if __name__ == '__main__':
+    
+def main():
     resultados = buscarCEP(input("DIGITE O CEP: "),show=True)
     if resultados:
         print("RESULTADOS:")
@@ -37,3 +38,6 @@ if __name__ == '__main__':
             print(f"BAIRRO: {t['bairro']}")
             print(f"RUA: {t['rua']}")
     input('>> PRESSIONE ENTER PARA SAIR...')
+    
+if __name__ == '__main__':
+    main()
